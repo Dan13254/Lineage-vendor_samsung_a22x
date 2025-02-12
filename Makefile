@@ -9,7 +9,6 @@ include $(VENDOR_DIR)/a22x-vendor.mk
 
 # Define the default target to build the vendor image
 vendorimage:
-    @echo "Building vendor image..."
 	make -C $(VENDOR_DIR) vendorimage
 	cp $(VENDOR_DIR)/vendor.img $(OUTPUT_DIR)/
 	@echo "Vendor image is built and saved to $(OUTPUT_DIR)/vendor.img"
