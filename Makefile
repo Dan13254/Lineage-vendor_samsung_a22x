@@ -14,6 +14,4 @@ vendorimage:
 	@echo "Building vendor image for Samsung Galaxy A22 5G..."
 	# Build the vendor image using the vendor makefile
 	make -C $(VENDOR_DIR) vendorimage
-	# Copy the vendor image to the output directory
-	cp $(VENDOR_DIR)/vendor.img $(OUTPUT_DIR)/
 	@echo "Vendor image is built and saved to $(OUTPUT_DIR)/vendor.img"
