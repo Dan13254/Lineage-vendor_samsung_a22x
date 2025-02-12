@@ -9,9 +9,9 @@ OUTPUT_DIR := ./out
 # Include the vendor makefile
 include $(VENDOR_DIR)/a22x-vendor.mk
 
-# Define the default target to build the vendor image
+# Define the target to build the vendor image directly
 vendorimage:
 	@echo "Building vendor image for Samsung Galaxy A22 5G..."
-	# Build the vendor image using the vendor makefile
+	# Directly run the necessary build command without recursion
 	make -C $(VENDOR_DIR) vendorimage
 	@echo "Vendor image is built and saved to $(OUTPUT_DIR)/vendor.img"
