@@ -5,7 +5,7 @@ VENDOR_DIR := ./vendor/samsung/a22x
 OUTPUT_DIR := ./out
 
 # Set the vendor makefile
-include $(VENDOR_DIR)/a22x-vendor.mk
+include a22x-vendor.mk
 
 # Define the default target to build the vendor image
 vendorimage:
